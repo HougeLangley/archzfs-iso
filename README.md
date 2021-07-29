@@ -5,6 +5,8 @@
 * zfs-utils added
 * stable linux kernel
 
+![zfs-archlinux](https://user-images.githubusercontent.com/1161594/127529134-7044487b-fe96-4775-ad53-38fcd85a5030.png)
+
 Build image:
 
 ```
