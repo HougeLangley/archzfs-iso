@@ -16,5 +16,5 @@ mkarchiso -v -w work -o out .
 Record it on a device:
 
 ```
-sudo dd if=out/archlinux_zfs-DATE-x86_64.iso of=/dev/sdevice status=progress
+sudo dd if=out/archlinux_zfs-DATE-x86_64.iso of=/dev/sdevice status=progress bs=1M
 ```
