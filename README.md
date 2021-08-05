@@ -10,6 +10,10 @@
 Build image:
 
 ```
+pacman -S archiso
+```
+
+```
 mkarchiso -v -w work -o out .
 ```
 
