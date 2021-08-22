@@ -2,6 +2,7 @@
 # SPDX-License-Identifier: GPL-3.0-or-later
 alsa-utils
 alacritty
+archinstall
 amd-ucode
 arch-install-scripts
 b43-fwcutter
@@ -41,6 +42,7 @@ htop
 intel-ucode
 ipw2100-fw
 ipw2200-fw
+iproute2
 irssi
 iwd
 jfsutils
@@ -63,6 +65,7 @@ mkinitcpio
 mkinitcpio-archiso
 mkinitcpio-nfs-utils
 mtools
+modemmanager
 nano
 nbd
 ndisc6
