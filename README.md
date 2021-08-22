@@ -19,7 +19,7 @@
 archinstall
 ```
 
-Build image:
+## Build image:
 
 ```
 pacman -S archiso
@@ -29,9 +29,7 @@ pacman -S archiso
 mkarchiso -v -w work -o out .
 ```
 
-Download ISO from release:
-
-Record it on a device:
+## Download ISO and Record it on a device:
 
 ```
 sudo dd if=out/archlinux_zfs-DATE-x86_64.iso of=/dev/sdevice status=progress bs=1M
