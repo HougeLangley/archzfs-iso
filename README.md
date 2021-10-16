@@ -1,8 +1,8 @@
 # Archiso with zfs
 
 * archzfs repo added
-* zfs-dkms instead
-* zfs-utils added
+* zfs-dkms-git added
+* zfs-utils-git added
 * stable linux kernel
 
 ## For now have two version ISO:
