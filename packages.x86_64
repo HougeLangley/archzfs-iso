@@ -111,5 +111,5 @@ wget
 xfsprogs
 xl2tpd
 zsh
-zfs-utils
-zfs-dkms
+zfs-utils-git
+zfs-dkms-git
