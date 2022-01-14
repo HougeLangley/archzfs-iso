@@ -37,6 +37,7 @@ gpart
 gpm
 gptfdisk
 grml-zsh-config
+git
 haveged
 hdparm
 htop
@@ -75,6 +76,7 @@ nilfs-utils
 nmap
 ntfs-3g
 nvme-cli
+neovim
 openconnect
 openssh
 openvpn
