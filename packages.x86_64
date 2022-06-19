@@ -85,7 +85,6 @@ nfs-utils
 nilfs-utils
 nmap
 ntfs-3g
-ntfs-3g-system-compression
 nvme-cli
 neovim
 nvidia-open-dkms
@@ -142,7 +141,6 @@ wget
 weechat
 wqy-microhei
 xfsprogs
-xf86-video-qxl-dummy
 xl2tpd
 xfce4
 xfce4-battery-plugin
