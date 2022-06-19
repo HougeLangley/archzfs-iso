@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 # shellcheck disable=SC2034
 
-iso_name="archlinux_zfs"
-iso_label="ARCH_ZFS_$(date +%Y%m)"
+iso_name="archlinux_zfs_xfce_live"
+iso_label="ARCH_ZFS_XFCE_LIVE_$(date +%Y%m)"
 iso_publisher="Houge Langley"
 iso_application="samizdat"
 iso_version="$(date +%Y.%m.%d)"
