@@ -48,8 +48,6 @@ hdparm
 htop
 hexchat
 intel-ucode
-ipw2100-fw
-ipw2200-fw
 iproute2
 irssi
 iwd
@@ -151,6 +149,7 @@ xorg-apps
 xorg-drivers
 xorg-server
 xorg-xinit
+xarchiver
 xz
 yubikey-manager
 yubikey-personalization-gui
