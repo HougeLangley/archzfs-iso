@@ -4,6 +4,7 @@
 * zfs-dkms-git added
 * zfs-utils-git added
 * stable linux kernel
+* v2raya and some network-tools added
 
 ## For now have two version ISO:
 
