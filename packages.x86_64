@@ -36,6 +36,10 @@ fatresize
 fsarchiver
 flameshot
 firefox
+fcitx5
+fcitx5-chinese-addons
+fcitx5-gtk
+fcitx5-qt
 gnu-netcat
 gpart
 gpm
@@ -90,6 +94,8 @@ nvidia-open-dkms
 nginx
 neofetch
 nix
+noto-fonts-cjk
+noto-fonts
 openconnect
 openssh
 openvpn
