@@ -40,7 +40,6 @@ fcitx5
 fcitx5-chinese-addons
 fcitx5-gtk
 fcitx5-qt
-gnu-netcat
 gpart
 gpm
 gptfdisk
@@ -51,7 +50,6 @@ git
 haveged
 hdparm
 htop
-hexchat
 intel-ucode
 iproute2
 irssi
@@ -92,7 +90,7 @@ nvme-cli
 neovim
 nvidia-open-dkms
 nginx
-neofetch
+fastfetch
 nix
 noto-fonts-cjk
 noto-fonts
@@ -105,7 +103,7 @@ partimage
 ppp
 pptpclient
 proxychains-ng
-p7zip
+7zip
 python
 python-pythondialog
 python-llfuse
