@@ -105,14 +105,12 @@ pptpclient
 proxychains-ng
 7zip
 python
-python-pythondialog
 python-llfuse
 python-pip
 python-yaml
 qemu-guest-agent
 rdesktop
 reflector
-reiserfsprogs
 rp-pppoe
 rsync
 rxvt-unicode-terminfo
