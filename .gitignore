@@ -1,3 +1,4 @@
 # Build artifacts - exclude from git
 work/
 out/
+out/*.part.*

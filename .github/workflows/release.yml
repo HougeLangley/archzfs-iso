@@ -12,21 +12,18 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Download ISO file
-        run: |
-          echo "ISO files should be built locally and uploaded via GitHub CLI or manually"
-          echo "This workflow expects ISO to be present in out/ directory"
-
       - name: Find ISO file
         id: find_iso
         run: |
-          ISO_FILE=$(find out/ -name "*.iso" -type f | head -n 1)
+          ISO_FILE=$(find out/ -name "*.iso" -type f ! -name "*.part.*" | head -n 1)
           if [ -z "$ISO_FILE" ]; then
             echo "No ISO file found in out/ directory"
             exit 1
           fi
           echo "iso_file=$ISO_FILE" >> $GITHUB_OUTPUT
           echo "Found ISO: $ISO_FILE"
+          ISO_SIZE=$(stat -c%s "$ISO_FILE")
+          echo "iso_size=$ISO_SIZE" >> $GITHUB_OUTPUT
 
       - name: Extract version from tag
         id: version
@@ -34,10 +31,28 @@ jobs:
           VERSION=${GITHUB_REF#refs/tags/v}
           echo "version=$VERSION" >> $GITHUB_OUTPUT
 
+      - name: Split ISO if larger than 2GB
+        id: split
+        run: |
+          ISO_FILE="${{ steps.find_iso.outputs.iso_file }}"
+          ISO_SIZE="${{ steps.find_iso.outputs.iso_size }}"
+          MAX_SIZE=1900000000
+          
+          if [ "$ISO_SIZE" -gt "$MAX_SIZE" ]; then
+            echo "ISO is larger than 2GB, splitting..."
+            split -b 1900000000 -d --verbose "$ISO_FILE" "${ISO_FILE}.part."
+            echo "split=true" >> $GITHUB_OUTPUT
+          else
+            echo "ISO is smaller than 2GB, no split needed"
+            echo "split=false" >> $GITHUB_OUTPUT
+          fi
+
       - name: Upload ISO to Release
         uses: softprops/action-gh-release@v1
         with:
-          files: out/*.iso
+          files: |
+            out/*.iso
+            out/*.iso.part.*
           tag_name: ${{ github.ref_name }}
           name: Release ${{ steps.version.outputs.version }}
           draft: false
